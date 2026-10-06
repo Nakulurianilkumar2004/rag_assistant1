@@ -1,0 +1,8 @@
+requests
+beautifulsoup4
+numpy
+fastembed
+groq
+python-dotenv
+fastapi
+uvicorn

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zoiko Rooms Assistant</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand">
+        <span class="logo">🏠</span>
+        <div>
+          <h1>Zoiko Rooms Assistant</h1>
+          <p id="subtitle">Answers grounded in zoikorooms.com</p>
+        </div>
+      </div>
+      <button id="clear-btn" class="ghost" title="Start a new conversation">New chat</button>
+    </header>
+
+    <main id="chat" class="chat">
+      <section id="welcome" class="welcome">
+        <h2>How can I help you today?</h2>
+        <p>Ask anything about finding or listing a room on Zoiko Rooms.</p>
+        <div class="suggestions">
+          <button class="suggestion">How does room verification work?</button>
+          <button class="suggestion">What is the Room Passport?</button>
+          <button class="suggestion">How do I list my room?</button>
+          <button class="suggestion">What is the minimum stay?</button>
+        </div>
+      </section>
+    </main>
+
+    <form id="chat-form" class="composer">
+      <textarea id="question" rows="1" placeholder="Ask about Zoiko Rooms…" required></textarea>
+      <button id="send-btn" type="submit" aria-label="Send">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M3 20.5v-17L22 12 3 20.5Zm2-3.1L16.9 12 5 6.6v4l6 1.4-6 1.4v4Z"/></svg>
+      </button>
+    </form>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
