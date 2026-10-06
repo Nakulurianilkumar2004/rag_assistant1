@@ -14,6 +14,10 @@ A retrieval-augmented Q&A bot over https://zoikorooms.com, with answers generate
 | 6. Augment | `rag.py` | Insert those chunks into the prompt as context |
 | 7. Generate | `rag.py` | Stream an answer from Groq (`openai/gpt-oss-120b`), citing source URLs |
 
+## Quick start (Windows)
+Double-click `run.bat` (or run it from a terminal). It creates `.venv`, installs `requirements.txt`,
+creates `.env` if missing, builds the index if `data/` is empty, and starts `app.py`.
+
 ## Setup
 ```bash
 pip install -r requirements.txt
